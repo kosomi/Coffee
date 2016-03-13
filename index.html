@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Starbucks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+		<!-- bower:css --> 
+	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" /> 
+	  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	    <!-- bower:js --> 
+	    <script src="bower_components/angular/angular.js"></script>  
+	    <script src="bower_components/angular-route/angular-route.js"></script> 
+	    <script src="bower_components/firebase/firebase.js"></script>  
+	    <script src="bower_components/angularfire/dist/angularfire.min.js"></script> 
+	    <!-- endbower --> 
+	    <!-- build:js({.tmp,app}) scripts/scripts.js --> 
+	    <script src="scripts/app.js"></script> 
+	    <script src="scripts/controllers/main.js"></script> 
+	    <script src="scripts/controllers/about.js"></script> 
+	    <!-- endbuild -->	
+</head>
+<body ng-app='CoffeeCounter' ng-controller="MainCtrl" ng-style="heroImage">
+<div class="hero">
+<div class='container'>
+<h3 class='text'>How Many Starbucks I Drink?</h3>
+	<div class='header'>
+		<ul class="nav nav-pills pull-right">
+			<li class="success"><a ng-href="/#"><i class="fa fa-coffee"></i></a></li> 
+			<li class="success"><a ng-href="#/enter"><i class="fa fa-newspaper-o"></i></a></li>
+			<li class="success"><a ng-href="#/about"><i class="fa fa-paper-plane-o"></i></a></li> 
+		</ul>
+	</div>
+
+<br><br><br>
+<div ng-view></div>
+<br><br></div></div>
+</body>
+</html> 
+ 

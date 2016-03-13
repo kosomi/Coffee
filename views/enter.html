@@ -1,0 +1,23 @@
+<div style="background-color:white" >
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th><center>Date</th>
+				<th><center>Morning</th>
+				<th><center>Noon</th>
+				<th><center>Night</th>
+				<th><center>Total</th>
+			</tr>
+		</thead>
+		<tbody align='center'>
+			<tr ng-repeat="(id, cup) in person | orderBy: '-Date' | limitTo:500 ">
+				<td><a href="#/edit/{{ cup.$id }}">{{cup.date}}</a></td>
+				<td>{{cup.Morning}}</td>
+				<td>{{cup.Afternoon}}</td>
+				<td>{{cup.Night}}</td>
+				<td><a href="#" ng-click="remove(id)">{{cup.Total}}</a></td> 
+			</tr>
+		</tbody>
+	</table> 
+
+</div>

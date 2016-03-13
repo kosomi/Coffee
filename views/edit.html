@@ -1,0 +1,32 @@
+<form ng-controller="EditCtrl" ng-submit="edit()" class="form-horizontal panel-body">
+	<div class="form-group">
+		<label class="col-md-2 control-label">Date</label>
+		<div class='col-md-2'>
+		<input type='date'  class="form-control" ng-model='person.date' class='form-default'></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-2 control-label">Morning</label>
+		<div class='col-md-1'>
+		<input type='number' class="form-control" placeholder=0 ng-model='person.Morning'></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-2 control-label">Afternoon</label>
+		<div class='col-md-1'>
+		<input type='number' class="form-control" placeholder=0 ng-model='person.Afternoon'></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-2 control-label">Night</label>
+		<div class='col-md-1'>
+		<input type='number' class="form-control" placeholder=0 ng-model='person.Night'></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-md-offset-2 col-md-10">
+		<input type='submit' class='btn btn-success btn-block' value='Edit'></input>
+		</div>
+	</div> 
+</form>
+<br>
